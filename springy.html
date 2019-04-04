@@ -1,0 +1,51 @@
+<html>
+<body>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/springy/2.8.0/springy.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/springy/2.8.0/springyui.min.js"></script>
+  <script src='https://d3js.org/d3.v4.min.js'></script>
+  <script>
+  //using the D3 library, parse the courses.csv file present on server
+  d3.csv("./courses.csv", function(data){
+          //initialize a new springy graph
+          var graph = new Springy.Graph();
+          var courses=[];
+          //loop through all the rows in courses.csv, creating a node for each row, and storing them in an array courses, indexed by their Unique IDs
+          for(i=0; i<data.length; i++){
+                  //Index data of each course indexed by their Unique IDs
+                  courses[data[i].Unique_id]={"Name":data[i].Name, "Prereq_m":data[i].Prereq_m, "Prereq_d":data[i].Prereq_d, "S_name": data[i].S_name, "Node":graph.newNode({label: data[i].Name})};
+
+                  //Split the semicolon separated list of prerequisites
+                  var a=courses[data[i].Unique_id].Prereq_m.split("; ");
+
+                  //when the list is empty, calling "Empty".split() returns one element "". Which breaks the code on looping over the array, hence, detect such a situation, and then set the prerequisites in that case to an empty array
+                  if(a.length==1 && a[0]==""){
+                          courses[data[i].Unique_id].Prereq_m=[];
+                  }else{
+                          //If list not empty, then load the array of prerequisites into Prereq_m
+                          courses[data[i].Unique_id].Prereq_m=a;
+                  }
+          }
+
+          //iterate through each course in the courses array, and for each course, create new edges pointing from prerequisite to itself.
+          for(i in courses){
+                  for(j in courses[i].Prereq_m){
+                          console.log(courses[i]);
+                          console.log(j);
+                          graph.newEdge(courses[courses[i].Prereq_m[j]].Node, courses[i].Node, {color: '#00A0B0'});
+                  }
+          }
+          
+    jQuery(function(){
+      var springy = window.springy = jQuery('#springydemo').springy({
+        graph: graph,
+        nodeSelected: function(node){
+          console.log('Node selected: ' + JSON.stringify(node.data));
+        }
+      });
+    });
+  });
+  </script>
+  <canvas id="springydemo" width="1024" height="768" />
+</body>
+</html>
