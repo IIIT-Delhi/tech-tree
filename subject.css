@@ -1,0 +1,15 @@
+.subject {
+	margin: auto;
+	width: 30%;
+	color: #808080;
+	font-family: "Arial";
+	font-size: 1.2em;
+	border-radius: 30px;
+	background-color: #3fada8;
+	padding: 10px;
+}
+.subject:hover{
+	-moz-box-shadow:    3px 3px 5px 6px #ccc;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  box-shadow:         3px 3px 5px 6px #ccc;
+}
