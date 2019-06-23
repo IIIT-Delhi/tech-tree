@@ -46,9 +46,11 @@
     <table class="table table-striped table-bordered" id="data-table">
      <thead>
       <tr>
-       <th>Student ID</th>
-       <th>Student Name</th>
-       <th>Phone Number</th>
+       <th>Course Name</th>
+       <th>Acronym</th>
+       <th>Course Code</th>
+       <th>Prerequisite (Mandatory)</th>
+       <th>Prerequisite (Desirable)</th>
       </tr>
      </thead>
     </table>
@@ -76,9 +78,11 @@ $(document).ready(function(){
     $('#data-table').DataTable({
      data  :  jsonData,
      columns :  [
-      { data : "student_id" },
-      { data : "student_name" },
-      { data : "student_phone" }
+      { data : "Course Name" },
+      { data : "Acronym" },
+      { data : "Unique ID" },
+      { data : "Pre-requisite (Mandatory)"},
+      { data : "Pre-requisite (Desirable)"}
      ]
     });
    }

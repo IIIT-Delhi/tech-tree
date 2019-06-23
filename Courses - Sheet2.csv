@@ -1,0 +1,14 @@
+Course Name,Aconym,Unique ID,Pre-requisite (Mandatory),Pre-requisite (Desirable)
+Abstract Algebra I,AA 1,MTH 212,-,MTH 100 or equivalent (Linear Algebra) 
+Abstract Algebra II,AA II,MTH512,Math I (MTH100)Abstract Algebra I (MTH212),-
+Advanced Embedded Logic Design-1,AELD,ECE 573,Digital Logic Design Software Prograrimg using C C++  Verilog  Computer Organization ,None
+Advanced Linear Algebra,-,MTH510,MTH100,-
+Advanced Machine Learning,AML,CSE642,MTH201 (Probability and Stats)  Machine Learning/Pattern Recognition(CSE343/CSE543),-
+Advanced Programming,AP,CSE201,Intro to programming(CSE101) Data Structures and Algorithms(CSE102),-
+Affective Computing,AFC,CSE5xx,IP(CSE101) DSA(CSE102)  AP(CSE201),Machine Learning(CSE343/CSE543) Artificial Intelligence(CSE643)
+Algorithm Design and Analysis,ADA,CSE222,Must have taken data structure and programming,Knowledge of discrete math
+Algorithm Design and Analysis-B,ALD,-,Must have taken data structure and programming,Some knowledge of mathematical proofs 
+Algorithms in Computational Biology,ACB,BIO522,None,None
+Analog CMOS Circuit Design,ACCD,ECE315/ECE515,Circuit or Network Analysis,Electronic Device
+Animation and Graphics,AnG,DES302,None,None
+Applied Ethics,AE,SSH321,None,None

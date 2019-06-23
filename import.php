@@ -9,9 +9,12 @@ if(!empty($_FILES['csv_file']['name']))
  while($row = fgetcsv($file_data))
  {
   $data[] = array(
-   'student_id'  => $row[0],
-   'student_name'  => $row[1],
-   'student_phone'  => $row[2]
+   'Course Name'  => $row[0],
+   'Acronym'  => $row[1],
+   'Unique ID'  => $row[2],
+   'Pre-requisite (Mandatory)' => $row[3],
+   'Pre-requisite (Desirable)' => $row[4]
+
   );
  }
  echo json_encode($data);
