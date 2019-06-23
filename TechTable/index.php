@@ -47,10 +47,10 @@
      <thead>
       <tr>
        <th>Course Name</th>
-       <th>Acronym</th>
+       <th>Course Acronym</th>
        <th>Course Code</th>
-       <th>Prerequisite (Mandatory)</th>
-       <th>Prerequisite (Desirable)</th>
+       <th>Mandatory Prerequisite</th>
+       <th>Desirable Prerequisite</th>
       </tr>
      </thead>
     </table>

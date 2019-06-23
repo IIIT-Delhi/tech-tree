@@ -12,9 +12,8 @@ if(!empty($_FILES['csv_file']['name']))
    'Course Name'  => $row[0],
    'Acronym'  => $row[1],
    'Unique ID'  => $row[2],
-   'Pre-requisite (Mandatory)' => $row[3],
-   'Pre-requisite (Desirable)' => $row[4]
-
+   'Pre-requisite (Mandatory)'  => $row[3],
+   'Pre-requisite (Desirable)'  => $row[4]
   );
  }
  echo json_encode($data);
