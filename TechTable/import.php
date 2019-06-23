@@ -2,9 +2,8 @@
 
 //import.php
 
-if(!empty($_FILES['csv_file']['name']))
-{
- $file_data = fopen($_FILES['csv_file']['name'], 'r');
+
+ $file_data = fopen("./Courses.csv", 'r');
  fgetcsv($file_data);
  while($row = fgetcsv($file_data))
  {
@@ -17,6 +16,6 @@ if(!empty($_FILES['csv_file']['name']))
   );
  }
  echo json_encode($data);
-}
+
 
 ?>

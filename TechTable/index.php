@@ -25,23 +25,10 @@
  <body>
   <div class="container">
    <br />
-   <h3 align="center">Import CSV File into Jquery Datatables using PHP Ajax</h3>
+   <h3 align="center">TechTable</h3>
    <br />
-   <form id="upload_csv" method="post" enctype="multipart/form-data">
-    <div class="col-md-3">
-     <br />
-     <label>Add More Data</label>
-    </div>  
-                <div class="col-md-4">  
-                   <input type="file" name="csv_file" id="csv_file" accept=".csv" style="margin-top:15px;" />
-                </div>  
-                <div class="col-md-5">  
-                    <input type="submit" name="upload" id="upload" value="Upload" style="margin-top:10px;" class="btn btn-info" />
-                </div>  
-                <div style="clear:both"></div>
+   <div style="clear:both"></div>
    </form>
-   <br />
-   <br />
    <div class="table-responsive">
     <table class="table table-striped table-bordered" id="data-table">
      <thead>
@@ -49,20 +36,18 @@
        <th>Course Name</th>
        <th>Course Acronym</th>
        <th>Course Code</th>
-       <th>Mandatory Prerequisite</th>
+       <th>Mandatory Prerequisites</th>
        <th>Desirable Prerequisite</th>
       </tr>
      </thead>
     </table>
    </div>
-  </div>
  </body>
 </html>
 
 <script>
 
 $(document).ready(function(){
- $('#upload_csv').on('submit', function(event){
   event.preventDefault();
   $.ajax({
    url:"import.php",
@@ -76,6 +61,8 @@ $(document).ready(function(){
    {
     $('#csv_file').val('');
     $('#data-table').DataTable({
+     "paging": false,
+     
      data  :  jsonData,
      columns :  [
       { data : "Course Name" },
@@ -87,7 +74,7 @@ $(document).ready(function(){
     });
    }
   });
- });
+ 
 });
 
 </script>
