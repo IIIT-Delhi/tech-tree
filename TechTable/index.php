@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/dataTables.bootstrap.min.css" />
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <style>
+    /* Styling for datatable */
   .box
   {
    max-width:600px;
@@ -29,20 +30,17 @@
         background: #ffffff;
         padding: 10px 10px;
         color: #fff;
+        top: 0;
     }
     .footer{
         width: 100%;
         background: #808080;
         padding: 10px 10px;
         color: #fff;
-    }
-    .header{
-        top: 0;
-    }
-    .footer{
         bottom: 0;
-    }    
-    /* Some more styles to beutify this example */
+    }
+    
+    /* Styling for header and footer */
     nav a{
         color: #fff;
         text-decoration: none;
@@ -57,7 +55,6 @@
         <div class="container">
             <nav>
                 <a href="https://iiitd.ac.in/"><img src="IIITDLogo.jpg" alt="Home" align="left"></a>
-
                 <img src = "TechTable.png" atl="TechTable" width="200" height="100" align="right">
             </nav>
         </div>
@@ -89,7 +86,6 @@
     </div>
  </body>
 </html>
-
 <script>
 
 $(document).ready(function(){

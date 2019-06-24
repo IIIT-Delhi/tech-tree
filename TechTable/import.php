@@ -2,7 +2,7 @@
 
 //import.php
 
-
+/* Loads the csv file and parses it to form arrays. Returns json to index.php*/
  $file_data = fopen("./sampleCourses.csv", 'r');
  fgetcsv($file_data);
  while($row = fgetcsv($file_data))
