@@ -20,9 +20,49 @@
    width:100%;
    margin: 0 auto;;
   }
+  body{        
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+  .header{
+        width: 100%;
+        background: #ffffff;
+        padding: 10px 10px;
+        color: #fff;
+    }
+    .footer{
+        width: 100%;
+        background: #808080;
+        padding: 10px 10px;
+        color: #fff;
+    }
+    .header{
+        top: 0;
+    }
+    .footer{
+        bottom: 0;
+    }    
+    /* Some more styles to beutify this example */
+    nav a{
+        color: #fff;
+        text-decoration: none;
+        padding: 7px 25px;
+        display: inline-block;
+    }
+    
   </style>
  </head>
  <body>
+  <div class="header">
+        <div class="container">
+            <nav>
+                <a href="https://iiitd.ac.in/"><img src="IIITDLogo.jpg" alt="Home" align="left"></a>
+
+                <img src = "TechTable.png" atl="TechTable" width="200" height="100" align="right">
+            </nav>
+        </div>
+    </div>
+
   <div class="container">
    <br />
    <h2 align="center">TechTable</h2>
@@ -36,12 +76,17 @@
        <th>Course Name</th>
        <th>Course Acronym</th>
        <th>Course Code</th>
-       <th>Mandatory Prerequisites</th>
-       <th>Desirable Prerequisite</th>
+       <th>Prerequisites</th>
+       <th>Antirequisites</th>
+       <th>Semester</th>
       </tr>
      </thead>
     </table>
    </div>
+
+   <div class="footer">
+        <div class="container">Copyright &copy; 2019 IIITD</div>        
+    </div>
  </body>
 </html>
 
@@ -62,14 +107,15 @@ $(document).ready(function(){
     $('#csv_file').val('');
     $('#data-table').DataTable({
      "paging": false,
-     
+
      data  :  jsonData,
      columns :  [
       { data : "Course Name" },
-      { data : "Acronym" },
-      { data : "Unique ID" },
-      { data : "Pre-requisite (Mandatory)"},
-      { data : "Pre-requisite (Desirable)"}
+      { data : "Course Acronym" },
+      { data : "Course Code" },
+      { data : "Prerequisites"},
+      { data : "Antirequisites"},
+      { data : "Semester"}
      ]
     });
    }
