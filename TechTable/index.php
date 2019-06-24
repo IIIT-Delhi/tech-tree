@@ -25,7 +25,7 @@
  <body>
   <div class="container">
    <br />
-   <h3 align="center">TechTable</h3>
+   <h2 align="center">TechTable</h2>
    <br />
    <div style="clear:both"></div>
    </form>
