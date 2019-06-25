@@ -6,7 +6,7 @@
 <!DOCTYPE html>
 <html>
  <head>
-  <title>Import CSV File into Jquery Datatables using PHP Ajax</title>
+  <title>IIITD|TechTable</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
   <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
@@ -21,6 +21,7 @@
    width:100%;
    margin: 0 auto;;
   }
+  /* For padding above and below the header and footer respectively*/
   body{        
         padding-top: 0px;
         padding-bottom: 0px;
@@ -29,34 +30,25 @@
         width: 100%;
         background: #ffffff;
         padding: 10px 10px;
-        color: #fff;
+        color: #ffffff;
         top: 0;
     }
     .footer{
         width: 100%;
         background: #808080;
         padding: 10px 10px;
-        color: #fff;
+        color: #ffffff;
         bottom: 0;
     }
     
-    /* Styling for header and footer */
-    nav a{
-        color: #fff;
-        text-decoration: none;
-        padding: 7px 25px;
-        display: inline-block;
-    }
-    
+        
   </style>
  </head>
  <body>
   <div class="header">
         <div class="container">
-            <nav>
                 <a href="https://iiitd.ac.in/"><img src="IIITDLogo.jpg" alt="Home" align="left"></a>
-                <img src = "TechTable.png" atl="TechTable" width="200" height="100" align="right">
-            </nav>
+                <img src = "TechTable.png" alt="TechTable" width="200" height="100" align="right">
         </div>
     </div>
 
@@ -93,7 +85,6 @@ $(document).ready(function(){
   $.ajax({
    url:"import.php",
    method:"POST",
-   data:new FormData(this),
    dataType:'json',
    contentType:false,
    cache:false,
