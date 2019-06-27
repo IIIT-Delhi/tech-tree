@@ -94,7 +94,14 @@ $(document).ready(function(){
      data  :  jsonData,
      // using the data in json format to make the table.
      columns :  [
-      { data : "Course Name"},
+      { "targets": 0,
+        data: "Course Name",
+        "render": function (data, type, row, meta) {
+        var cname=data.substring(0,data.indexOf("#"));
+        var link=data.substring(data.indexOf("#")+1);
+        return '<a href="'+link+'">'+cname+'</a>';}
+          // Hyperlinking the course name with the drive link
+      },
       { data : "Course Acronym" },
       { data : "Course Code" },
       { data : "Prerequisites"},
