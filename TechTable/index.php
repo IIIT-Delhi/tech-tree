@@ -1,8 +1,3 @@
-<?php
-
-//index.php
-
-?>
 <!DOCTYPE html>
 <html>
  <head>
@@ -33,7 +28,7 @@
         color: #ffffff;
         top: 0;
     }
-    .footer{
+  .footer{
         width: 100%;
         background: #808080;
         padding: 10px 10px;
@@ -81,7 +76,8 @@
 <script>
 
 $(document).ready(function(){
-  event.preventDefault();
+  // checks if the CSV file was loaded correctly
+  
   $.ajax({
    url:"import.php",
    method:"POST",
@@ -96,13 +92,15 @@ $(document).ready(function(){
      "paging": false,
 
      data  :  jsonData,
+     // using the data in json format to make the table.
      columns :  [
-      { data : "Course Name" },
+      { data : "Course Name"},
       { data : "Course Acronym" },
       { data : "Course Code" },
       { data : "Prerequisites"},
       { data : "Antirequisites"},
       { data : "Semester"}
+
      ]
     });
    }
