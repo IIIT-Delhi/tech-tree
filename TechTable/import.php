@@ -8,7 +8,8 @@
  while($row = fgetcsv($file_data))
  {
   $data[] = array(
-   'Course Name'  => $row[0],
+   'Course Name'  => $row[0].'#'.$row[9],
+   // adds a '#' in between the Course Name and Link, and parses them together
    'Course Acronym'  => $row[1],
    'Course Code'  => $row[2],
    'Prerequisites'  => $row[3],
