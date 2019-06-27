@@ -1,11 +1,11 @@
 Course Name,Course Acronym,Course Code,Prerequisites,Antirequisites,Semester,Preferable Prerequisites,Professor,Credits,Link
-Abstract Algebra I,AA I,MTH212,None,None,Monsoon,MTH100,xyz,4,abc
-Abstract Algebra II,AA II,MTH512,None,Winter,"MTH100, MTH212",lmn,4,mno
-Advanced Embedded Logic Design-1,AELD,ECE573,ECE512,Winter,None,pqr,4,ijk
-Advanced Linear Algebra,ALA,MTH510,None,Monsoon,MTH100,def,4,ghi
-Advanced Machine Learning,AML,CSE642,"MTH201, CSE343/CSE543",None,Monsoon,None,wxy,4,opq
-Advanced Programming,AP,CSE201,None,Monsoon,"CSE101,CSE102",rst,4,fgh
-Affective Computing,AFC,CSE5xx,"CSE101, CSE102, CSE201, CSE343/CSE543",None,Winter,"CSE643",opt,4,lmn
-Algorithm Design and Analysis,ADA,CSE222,None,Summer,CSE102,qrs,2,ijkl
-Algorithms in Computational Biology,ACB,BIO522,None,None,Monsoon,CSE102,ghijk,4,bcdef
-Analog CMOS Circuit Design,ACCD,ECE315/ECE515,ECE213,None,Winter,None,yzab,4,rstuv
+Abstract Algebra I,AA I,MTH212,None,None,Monsoon,MTH100,xyz,4,http://www.google.co.in
+Abstract Algebra II,AA II,MTH512,None,Winter,"MTH100, MTH212",lmn,dfd,4,http://www.google.co.in
+Advanced Embedded Logic Design-1,AELD,ECE573,ECE512,Winter,None,pqr,dfd,4,http://www.google.co.in
+Advanced Linear Algebra,ALA,MTH510,None,Monsoon,MTH100,def,daff,4,http://www.google.co.in
+Advanced Machine Learning,AML,CSE642,"MTH201, CSE343/CSE543",None,Monsoon,None,wxy,4,http://www.google.co.in
+Advanced Programming,AP,CSE201,None,Monsoon,"CSE101,CSE102",rst,afafaf,2,http://www.google.co.in
+Affective Computing,AFC,CSE5xx,"CSE101, CSE102, CSE201, CSE343/CSE543",None,Winter,CSE643,opt,2,http://www.google.co.in
+Algorithm Design and Analysis,ADA,CSE222,None,Summer,CSE102,qrs,Mfdf,2,http://www.google.co.in
+Algorithms in Computational Biology,ACB,BIO522,None,None,Monsoon,CSE102,ghijk,4,http://www.google.co.in
+Analog CMOS Circuit Design,ACCD,ECE315/ECE515,ECE213,None,Winter,None,yzab,4,http://www.google.co.in
