@@ -43,13 +43,13 @@
   <div class="header">
         <div class="container">
                 <a href="https://iiitd.ac.in/"><img src="IIITDLogo.jpg" alt="Home" align="left"></a>
-                <img src = "TechTable.png" alt="TechTable" width="200" height="100" align="right">
+                <img src = "cdt.png" alt="CourseDirectoryTable" width="250" height="125" align="right">
         </div>
     </div>
 
   <div class="container">
    <br />
-   <h2 align="center">TechTable</h2>
+   <h2 align="center">Course Table</h2>
    <br />
    <div style="clear:both"></div>
    </form>
