@@ -14,7 +14,8 @@
    'Course Code'  => $row[2],
    'Prerequisites'  => $row[3],
    'Antirequisites'  => $row[4],
-   'Semester'  => $row[5]
+   'Semester'  => $row[5],
+   'link'  => $row[9]
   );
  }
  echo json_encode($data);
